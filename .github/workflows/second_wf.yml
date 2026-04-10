@@ -1,0 +1,12 @@
+name: Second WF
+on: 
+  issues:
+  workflow_dispatch:
+
+jobs:
+  get_event:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Event
+        run: echo "${{ github.event }}"
