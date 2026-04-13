@@ -1,5 +1,8 @@
 name: lint_test_job
-on:  push
+on:  
+  push:
+    paths-ignore: 
+      - '.github/workflows/*'
 
 jobs:
   lint_job:
